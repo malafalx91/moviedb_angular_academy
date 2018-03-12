@@ -1,11 +1,12 @@
-#Developers
+# Developers
 
 Francesco Zingaro
+
 Patrizia Santagata
 
 
 
-#Code Challenge
+# Code Challenge
 
 Build a UI to search the Movie DB
 The user should be able to enter some text into a search field, see and
@@ -15,7 +16,7 @@ https://themoviedb.org/
 http://docs.themoviedb.apiary.io/
 https://github.com/cavestri/themoviedb-javascript-library/
 
-#Additional Notes
+# Additional Notes
 
 The solution has to be provided as a Git repository including all the implementation
 commits history. Please follow the frequent commit practice while working on the task
