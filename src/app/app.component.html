@@ -1,0 +1,70 @@
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <div class='headLogo'><img [src]='LOGO' class='imgLogo'/></div>
+    <a fragment="top" class="navbar-brand js-scroll-trigger" routerLink="/home">Movie DB</a>
+    <h1 id="top"></h1>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+        </li>
+                
+      </ul>
+    </div>
+  </div>
+  
+</nav>
+</div> <!-- /container -->
+
+<header class="masthead text-center text-white d-flex">
+  <div class="container my-auto">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h1 class="text-uppercase">
+          <strong>MOVIE DB</strong>
+        </h1>
+        <hr>
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <p class="text-faded mb-5">Cerca i tuoi film preferiti</p>
+        <a fragment="search-box" class="btn btn-primary btn-xl js-scroll-to-buttom" routerLink="/search">Search</a>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills float-right">
+            <li class="nav-item">
+              <a class="nav-link active" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/search">Search Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/music">Search Music</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/datatables">Libraries</a>
+            </li> 
+          </ul>
+        </nav>
+        <div class='headLogo'><img [src]='LOGO' class='imgLogo'/></div><h3 class="text-muted">{{title}}</h3>
+      </div> -->
+
+
+      <router-outlet></router-outlet>
+      <h1 id="search-box"></h1>
+
+
+    
+
+
+
+
+

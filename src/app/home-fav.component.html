@@ -1,0 +1,245 @@
+<section class="bg-primary" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="section-heading text-white">Una grande raccolta di film e serie Tv</h2>
+        <hr class="light my-4">
+        <p class="text-faded mb-4">Ringraziamo per le API il sito MovieDB.com</p>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- <section id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">At Your Service</h2>
+        <hr class="my-4">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box mt-5 mx-auto">
+          <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
+          <h3 class="mb-3">Sturdy Templates</h3>
+          <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box mt-5 mx-auto">
+          <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
+          <h3 class="mb-3">Ready to Ship</h3>
+          <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box mt-5 mx-auto">
+          <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
+          <h3 class="mb-3">Up to Date</h3>
+          <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box mt-5 mx-auto">
+          <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
+          <h3 class="mb-3" id="services1">Made with Love</h3>
+          <p class="text-muted mb-0">You have to make your websites with love these days!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- <section class="p-0" id="portfolio">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters popup-gallery">
+      <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg">
+          <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Category
+              </div>
+              <div class="project-name">
+                Project Name
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg">
+          <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Category
+              </div>
+              <div class="project-name">
+                Project Name
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg">
+          <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Category
+              </div>
+              <div class="project-name">
+                Project Name
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg">
+          <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Category
+              </div>
+              <div class="project-name">
+                Project Name
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg">
+          <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Category
+              </div>
+              <div class="project-name">
+                Project Name
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg">
+          <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                Category
+              </div>
+              <div class="project-name">
+                Project Name
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<p-tabView>
+    <p-tabPanel header="Favorite Movies" [selected]="true">
+      <div class="ui-g">
+          <div class="ui-g-4">Favorites</div>
+          <div class="ui-g-12 ui-md-4 ui-md-offset-4 pull-right" style='text-align: right;'>
+            Sort By: 
+                Year    <a (click)="orderBy('release_date','asc')"><i class='glyphicon glyphicon-sort-by-attributes'></i></a>  
+                        <a (click)="orderBy('release_date','desc')"><i class='glyphicon glyphicon-sort-by-attributes-alt'></i></a> | 
+                Rating  <a (click)="orderBy('vote_average','asc')"><i class='glyphicon glyphicon-sort-by-attributes'></i></a> 
+                        <a (click)="orderBy('vote_average','desc')"><i class='glyphicon glyphicon-sort-by-attributes-alt'></i></a> | 
+                Name    <a (click)="orderBy('title','asc')"><i class='glyphicon glyphicon-sort-by-attributes'></i></a>  
+                        <a (click)="orderBy('title','desc')"><i class='glyphicon glyphicon-sort-by-attributes-alt'></i></a>
+          </div>
+      </div>
+
+        <alert type="info" *ngIf="(movies == null) || (movies.length == 0)">
+          <strong>No favorites yet!</strong> Search and add some of your favorite movies.
+        </alert>
+        <div class="wrapper" *ngFor="let movie of movies">
+          <div class="product-img">
+            <img [src]="'https://image.tmdb.org/t/p/w300_and_h450_bestv2'+movie.poster_path" height="220" width="147">
+          </div>
+          <div class="product-info">
+            <div class="product-text">
+                <h1>{{ movie.title }}</h1>
+                <div class='block2'><span style="height: 20px;" (click)="addRemoveFav(movie)" [ngClass]="isFav(movie.id)"></span></div>                    
+                <template #popTemplate>
+                  <table style='width:100%;'>
+                    <tr>
+                      <td>Original Title</td>
+                      <td>: {{ movie.original_title }}</td>
+                    <tr>
+                    <tr>
+                      <td>Votes</td>
+                      <td>: {{ movie.vote_count }}</td>
+                    <tr>
+                    <tr>
+                      <td>Rating</td>
+                      <td>: {{ movie.vote_average }}</td>
+                    <tr>
+                    <tr>
+                      <td>Language</td>
+                      <td>: {{ movie.original_language }}</td>
+                    <tr>
+                  </table>
+                </template>
+                <h2>
+                Year: {{ movie.release_date | date }}
+                </h2>
+                <a [popover]="popTemplate" popoverTitle="Details" placement="bottom" [outsideClick]="true"> View Details </a>          
+              <p>{{ movie.overview }} </p>
+            </div>
+            <a style='float:right;' 
+            [popover]="popTemplate2" popoverTitle="Plot" placement="left" [outsideClick]="true"
+            type="info" 
+            *ngIf="movie.overview?.length > 422">
+              Read More..
+            </a>
+            <template #popTemplate2>
+              {{ movie.overview }}
+            </template>         
+          </div>
+        </div>
+    </p-tabPanel>
+    <p-tabPanel header="Favorite Music">
+      <div class="ui-g">
+          <div class="ui-g-4">Favorites</div>
+          <div class="ui-g-12 ui-md-4 ui-md-offset-4 pull-right" style='text-align: right;'>
+          </div>
+      </div>    
+      <alert type="info" *ngIf="(musics == null) || (musics.length == 0)">
+        <strong>No favorites yet!</strong> Search and add some of your favorite tracks.
+      </alert>    
+      <div class="wrapperMusic" *ngFor="let track of musics">
+        <div class="track-img">
+          <img [src]="track.artworkUrl100" height="60" width="60">
+        </div>
+        <div class="track-info">
+          <div class="track-text">
+              <h1>{{ track.trackName }} </h1>
+              <div class='block2'>Duration: {{ msToTime(track.trackTimeMillis)  }} <span href='#' (click)="addRemoveFavMusic(track)" [ngClass]="isFavMusic(track.trackId)"></span></div>
+
+              <h2>Artist: {{ track.artistName }} </h2>
+              <h2>Genre: {{ track.primaryGenreName  }} </h2>
+              <h2>Released: {{ track.releaseDate | date }} </h2>
+          </div>     
+        </div>
+      </div>
+    </p-tabPanel>
+</p-tabView>

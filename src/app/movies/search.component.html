@@ -1,0 +1,73 @@
+ <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="input-group">
+              <input placeholder='Search Movies' #searchBox id="search-box"  />
+                <label  class="btn btn-primary" (click)="search(searchBox.value)">Cerca
+                <i [ngClass]="loadingIndicator ? 'fa fa-spinner fa-spin' : 'fa fa-search'"></i>
+              </label>
+              <alert type="info" *ngIf="(movies | async)?.length == 0">
+                  <strong>Nessun risultato trovato!</strong>
+                </alert>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+        
+
+  <section class="bg-primary" id="about">
+    <div class="container">
+      <div class="row">
+        
+  <div class="wrapper" *ngFor="let movie of movies | async">
+    <div class="product-img">
+      <img [src]="'https://image.tmdb.org/t/p/w300_and_h450_bestv2'+movie.poster_path" height="220" width="147">
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+          <h1 >{{ movie.title }}</h1>
+          <div class='block2'><span style="height: 20px;" (click)="addRemoveFav(movie)" [ngClass]="isFav(movie.id)"></span></div>                    
+	        <template #popTemplate>
+            <table style='width:100%;'>
+              <tr>
+                <td>Titolo originale</td>
+                <td>: {{ movie.original_title }}</td>
+              <tr>
+              <tr>
+                <td>Voto</td>
+                <td>: {{ movie.vote_count }}</td>
+              <tr>
+              <tr>
+                <td>Valutazione</td>
+                <td>: {{ movie.vote_average }}</td>
+              <tr>
+              <tr>
+                <td>Lingua</td>
+                <td>: {{ movie.original_language }}</td>
+              <tr>
+            </table>
+          </template>
+          <h2>
+          Anno: {{ movie.release_date | date }}
+          </h2>
+          <a [popover]="popTemplate" popoverTitle="Details" placement="bottom" [outsideClick]="true"> </a>          
+        <p>{{ movie.overview }} </p>
+      </div>
+      <a style='float:right;' 
+      [popover]="popTemplate2" popoverTitle="Plot" placement="left" [outsideClick]="true"
+      type="info" 
+      *ngIf="movie.overview?.length > 422">
+        
+      </a>
+      <template #popTemplate2>
+        {{ movie.overview }}
+      </template>      
+    </div>
+  </div>
+</div>
+</div>
+</section>
